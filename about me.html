@@ -2,47 +2,114 @@
 <html lang ="en-US">
 <head>
   <title> About Taliyah </title>
+  <link href="https://fonts.googleapis.com/css?family=Acme|Bitter:400,400i,700|Bree+Serif|Droid+Serif:400,400i,700,700i|Francois+One|Russo+One|Shrikhand|Volkhov:400,400i,700,700i" rel="stylesheet">
 <style>
   body {background-color: #42f4d4;}
-  p {color:#342e47; }
-  h1  {color:#6e41f4;}
+  p {color:#342e47; } /**REDUNDANT WITH CLASS**/
+  h1  {color:#6e41f4;} /**REDUNDANT WITH CLASS**/
   img {
     padding: 10px 10px 10px 10px;
+    height:155;
+    width:115;
     float: left;
 
-
   }
-  .spacepurpleheader {color: #6e41f4; }
-  .polvoparagraph {color: #342e47;}
+/**CLASS AND ID DEFINITIONS
 
+
+  /**CHARACTER FORMAT**/
+  .spacepurpleheader {
+    color: #6e41f4;
+    font-family: 'Russo One', sans-serif;
+  }
+  .polvoparagraph {
+    color: #342e47;
+    font-family: 'Volkhov', serif;
+  }
+
+/**  font-family: 'Droid Serif', serif;
+  font-family: 'Bitter', serif;
+  font-family: 'Bree Serif', serif;
+  font-family: 'Acme', sans-serif;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'Shrikhand', cursive;
+  font-family: 'Russo One', sans-serif;
+  font-family: 'Volkhov', serif;
+  **/
   .divAboutMe {
     background-color: salmon;
-    width: 100%;
+    width: 95%;
     border: 50px lightgrey;
     padding: 10px 10px 10px 10px;
-    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
     clear: right;
     height: auto;
     overflow: hidden;
-
   }
 
   .divStuffILike {
     background-color: salmon;
-    width: 100%;
+    width: 95%;
     border: 50px lightgrey;
     padding: 10px 10px 10px 10px;
-    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
     clear:right;
+    overflow: hidden;
   }
 
   .divStuffIDontLike {
     background-color: salmon;
-    width: 100%;
+    width: 95%;
     border: 50px lightgrey;
     padding: 10px 10px 10px 10px;
-    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
     clear:right;
+}
+
+.divStuffIveDone {
+  background-color: salmon;
+  width: 95%;
+  border: 50px lightgrey;
+  padding: 10px 10px 10px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  clear:right;
+  overflow: hidden;
+}
+
+.divLinks{
+  background-color: salmon;
+  width: 95%;
+  border: 50px lightgrey;
+  padding: 10px 10px 10px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  clear:right;
+  overflow: hidden;
+}
+.divItem {
+  background-color: white;
+  width: auto;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+  margin: 10px;
+  float: left;
+  overflow: hidden;
+
+}
+
+.divGIF{
+  background-color: white;
+  width: auto;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+  margin: 10px;
+  float: left;
+  clear: right;
+  overflow: hidden;
 }
 
 </style>
@@ -50,11 +117,19 @@
 
 <body>
 
-<h1 style="text-align:center"> About Taliyah </h1>
+<h1 style="text-align:center" class="spacepurpleheader"> About Taliyah </h1>
   <br>
   <div class="divAboutMe">
-  <img src="rubiks_cube_costume.jpg" width=115 height=155>
-  <p> Hi! I'm Taliyah. I live in the Metropolitan DC Area
+  <img src="rubiks_cube_costume.jpg" width=115 height=155 id="rubiks">
+<!--  <img src="lorca.jpeg" style="display.none" id="lorca">
+  <img src="natcat.jpeg" style="display.none" id="natcat">
+
+
+
+<button type="button" onclick='document.getElementById'("rubiks").innerHTML = "lorca"></button>
+  <button type="button" onclick='document.getElementById"lorca".innerHTML ="natcat"'></button>
+  <button type="button" onclick="natcat".innerHTML="rubiks"></button>-->
+  <p class="polvoparagraph"> Hi! I'm Taliyah. I live in the Metropolitan DC Area
   and I go to the National Cathedral School for Girls, class of 2019. I'm a lighting designer, and I also play squash, rock climb,
   and whitewater kayak. When I'm not in my school's theater or outside, I'm probably asleep or playing video games.
   </p>
@@ -63,11 +138,18 @@
 </br>
 <div class="divStuffILike">
 <h2 class="spacepurpleheader"> Stuff I Like </h2>
-  <p class="polvoparagraph"> Movies: Star Wars, The Hobbit and Lord of the Rings Trilogies,<br>
-    TV Shows: Game of Thrones, Avatar: The Last Airbender, Stranger Things, Parks and Rec, Jane the Virgin, Silicon Valley<br>
-    Video Games (born with Nintendo, bred with Xbox 360, currently PS4): Assassin's Creed, Super Mario Bros., Mario Kart Wii, Destiny, Star Wars: Battlefront, Battlefield, Overwatch, Tom Clancy's Ghost Recon: Wildlands, Titanfall 2, <br>
+<div class="divGIF"> <iframe src="https://giphy.com/embed/J1nr4o7oolWz6" width="185" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> </div>
+<div class="divGIF"> <iframe src="https://giphy.com/embed/g7SFZQGzS4HwQ" width="240" height="117" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> </div>
+<div class="divGIF"> <iframe src="https://giphy.com/embed/c2SO594Cq3d6g" width="240" height="180" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> </div>
+<div class="divGIF"> <iframe src="https://giphy.com/embed/m5FqYUKkTB2fe" width="240" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> </div>
+<div class="divGIF"> <iframe src="https://giphy.com/embed/132qeyvgJ2Al3i" width="240" height="140" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p> </div>
+<div class="divGIF"> <iframe src="https://giphy.com/embed/3oEjI0S99KxsaKmgX6" width="240" height="135" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> </div>
+<div class="divGIF"> <iframe src="https://giphy.com/embed/3o7TKWGeSdcJpJC9Wg" width="240" height="153" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> </div>
+<!--  <p class="polvoparagraph"> Movies: Star Wars, The Hobbit and Lord of the Rings Trilogies,<br> <br>
+    TV Shows: Game of Thrones, Avatar: The Last Airbender, Stranger Things, Parks and Rec, Jane the Virgin, Silicon Valley, Adventure Time<br> <br>
+    Video Games (born with Nintendo, bred with Xbox 360, currently PS4): Assassin's Creed, Super Mario Bros., Mario Kart Wii, Destiny, Star Wars: Battlefront, Battlefield, Overwatch, Tom Clancy's Ghost Recon: Wildlands, Titanfall 2, <br><br>
     Ice Cream Flavors: Cotton Candy, Ben&Jerry's Chocolate Chip Cookie Dough
-  <p/>
+  <p/> -->
 </div>
 
 <br>
@@ -78,8 +160,33 @@
 </div>
 </br>
 
+<div class="divStuffIveDone">
 <h3 class="spacepurpleheader"> Stuff I've Done </h3>
 
+<div class= "divItem">
+  <a href="https://repl.it/J7bp/0" class="polvoparagraph"> Text Adventure </a>
+</div>
+
+<div class= "divItem">
+  <a href="https://scratch.mit.edu/projects/167549212/" class="polvoparagraph"> Space Paddle Ball </a>
+</div>
+
+<div class= "divItem">
+  <p class="polvoparagraph"> Obamicon </p>
+  <img src= "doge.jpeg" width=100 height=100>
+  <img src= "recolored.jpg" width=100 height=100>
+</div>
+</div>
+
+</br>
+
+<div class="divLinks">
+<h2 class="spacepurpleheader"> Links to Me </h2>
+<div class="divItem">
+<a href="https://github.com/taquitoetruck"> <img src="github.png" height=100 width=150> </a>
+</div>
+
+</div>
 
 </body>
 </html>
