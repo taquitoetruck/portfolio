@@ -5,7 +5,7 @@
   <link href="https://fonts.googleapis.com/css?family=Acme|Bitter:400,400i,700|Bree+Serif|Droid+Serif:400,400i,700,700i|Francois+One|Russo+One|Shrikhand|Volkhov:400,400i,700,700i" rel="stylesheet">
 <style>
   body {background-color: #42f4d4;}
-  p {color:#342e47; } /**REDUNDANT WITH CLASS**/
+  p {color:#342e47;} /**REDUNDANT WITH CLASS**/
   h1  {color:#6e41f4;} /**REDUNDANT WITH CLASS**/
   img {
     padding: 10px 10px 10px 10px;
@@ -13,6 +13,12 @@
     width:115;
     float: left;
 
+  }
+
+  iframe {
+    float: left;
+    padding: 10px 10px 10px 10px;
+    border:none;
   }
 /**CLASS AND ID DEFINITIONS
 
@@ -46,6 +52,7 @@
     clear: right;
     height: auto;
     overflow: hidden;
+
   }
 
   .divStuffILike {
@@ -112,15 +119,58 @@
   overflow: hidden;
 }
 
+#title{
+  position: absolute;
+  width:auto;
+  height:auto;
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+
+}
+
+ul{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color:white;
+  position: fixed;
+  top:0;
+  width:auto;
+}
+
+li {
+  float:left;
+}
+li a{
+  display:block;
+  padding:10px 12px;
+  text-align: center;
+}
+
+li a:hover:not(.active){
+  background-color: salmon;
+}
+
+.active {
+  background-color:lightgrey;
+}
 </style>
 </head>
 
 <body>
-
-<h1 style="text-align:center" class="spacepurpleheader"> About Taliyah </h1>
-  <br>
+<ul>
+  <h1 style="text-align:center" class="spacepurpleheader"> About Taliyah </h1> </br>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="divAboutMe">About</a></li>
+  <li><a href="divStuffILike">Stuff I Like</a></li>
+  <li><a href="divStuffIDontLike">Stuff I Don't Like</a></li>
+  <li><a href="divStuffIveDone">Stuff I've Done</a></li>
+  <li><a href="divLinks">Links to Me</a></li>
+</ul>
+  <br><br><br><br><br><br><br><br>
   <div class="divAboutMe">
-  <img src="rubiks_cube_costume.jpg" width=115 height=155 id="rubiks">
+  <iframe src="https://drive.google.com/file/d/0B50keJyfL5_4OFdZQzlOakJVaHc/preview" width="320" height="240" float="left"></iframe>
 <!--  <img src="lorca.jpeg" style="display.none" id="lorca">
   <img src="natcat.jpeg" style="display.none" id="natcat">
 
@@ -142,9 +192,11 @@
 <div class="divGIF"> <iframe src="https://giphy.com/embed/g7SFZQGzS4HwQ" width="240" height="117" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> </div>
 <div class="divGIF"> <iframe src="https://giphy.com/embed/c2SO594Cq3d6g" width="240" height="180" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> </div>
 <div class="divGIF"> <iframe src="https://giphy.com/embed/m5FqYUKkTB2fe" width="240" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> </div>
-<div class="divGIF"> <iframe src="https://giphy.com/embed/132qeyvgJ2Al3i" width="240" height="140" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p> </div>
+<div class="divGIF"> <iframe src="https://giphy.com/embed/132qeyvgJ2Al3i" width="240" height="140" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> </div>
 <div class="divGIF"> <iframe src="https://giphy.com/embed/3oEjI0S99KxsaKmgX6" width="240" height="135" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> </div>
 <div class="divGIF"> <iframe src="https://giphy.com/embed/3o7TKWGeSdcJpJC9Wg" width="240" height="153" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> </div>
+<div class="divGIF"> <iframe src="https://giphy.com/embed/VaJ9E3fUdWyKk" width="240" height="112" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> </div>
+<div class="divGIF"> <iframe src="https://giphy.com/embed/qvsTw0Dcigec0" width="240" height="109" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> </div>
 <!--  <p class="polvoparagraph"> Movies: Star Wars, The Hobbit and Lord of the Rings Trilogies,<br> <br>
     TV Shows: Game of Thrones, Avatar: The Last Airbender, Stranger Things, Parks and Rec, Jane the Virgin, Silicon Valley, Adventure Time<br> <br>
     Video Games (born with Nintendo, bred with Xbox 360, currently PS4): Assassin's Creed, Super Mario Bros., Mario Kart Wii, Destiny, Star Wars: Battlefront, Battlefield, Overwatch, Tom Clancy's Ghost Recon: Wildlands, Titanfall 2, <br><br>
@@ -175,6 +227,14 @@
   <p class="polvoparagraph"> Obamicon </p>
   <img src= "doge.jpeg" width=100 height=100>
   <img src= "recolored.jpg" width=100 height=100>
+</div>
+<div class= "divItem">
+  <p class= "polvoparagraph"> Arduino: Light Show and Dance Party</p>
+  <iframe src="https://drive.google.com/file/d/0B50keJyfL5_4WG1YdktUekhhTkU/preview" width="160" height="120"></iframe>
+</div>
+<div class="divItem">
+  <p class="polvoparagraph"> Arduino: Escape Bot </p>
+  <iframe src="https://drive.google.com/file/d/0B50keJyfL5_4OUZsWS1nQkRsQnM/preview" width="180" height="120"></iframe>
 </div>
 </div>
 
